@@ -24,6 +24,10 @@
         img {
             max-width: 100%;
         }
+
+        embed {
+            width: 100%;
+        }
     </style>
     <script>
         const ans = ["", "イ", "イ", "イ", "エ", "イ", "エ", "ア", "イ", "ア", "ウ",
@@ -44,13 +48,13 @@
             }
             let next = +(((document.getElementById("qs").src).slice(-6)).replace(/[^0-9]/g, '')) + 1;
             document.getElementById("answer").style = "display: none;";
-            if (ans.length <= next){
+            if (ans.length <= next) {
                 document.getElementById("qs").src = "images/q1.png";
             }
             else {
                 document.getElementById("qs").src = "images/q" + next + ".png";
             }
-            
+
         }
 
     </script>
@@ -74,13 +78,14 @@
         </p>
         <p id="answer" style="display: none;">
             正解<br>
-            <embed src="a1.txt" type="text/plain" alt="">
+            <embed src="images/a1.txt" type="text/plain" alt="">
         </p>
+    </main>
+    <footer>
         <p>
             出典元：IPA　独立行政法人　情報処理推進機構
         </p>
-    </main>
-    <footer></footer>
+    </footer>
 </body>
 
 </html>
