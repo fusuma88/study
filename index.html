@@ -11,6 +11,10 @@
             width: 400px;
         }
 
+        h1 {
+            font-size: 16px;
+        }
+
         form {
             width: 400px;
             padding-left: 50px;
@@ -53,6 +57,7 @@
             }
             else {
                 document.getElementById("qs").src = "images/q" + next + ".png";
+                document.getElementById("answer").children[1].src = "images/a" + next + ".txt";
             }
 
         }
@@ -78,7 +83,7 @@
         </p>
         <p id="answer" style="display: none;">
             正解<br>
-            <embed src="images/a1.txt" type="text/plain" alt="">
+            <embed src="images/a1.txt" type="text/plain" alt="解説なし">
         </p>
     </main>
     <footer>
