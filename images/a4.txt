@@ -1,0 +1,14 @@
+・VLIW（Very Long Instruction Word：超長命令語）
+　コンパイラが独立した複数の命令を1つの長い命令にまとめて
+　並列実行するCPU設計方式。
+
+・CISC（Complex Instruction Set Computer）
+　1つの命令で複数の複雑な処理を実行できるCPU設計方式。
+
+・MIMD（Multiple Instruction, Multiple Data）
+　複数のプロセッサが独立して異なる命令（Instruction）
+　を異なるデータ（Data）に対して並列に処理するアーキテクチャ。
+
+・RISC
+　マイクロプロセッサ（MPU/CPU）の命令語の仕様の設計方針の一つ
+　で固定長の少数の単純な命令のみを備え、実行効率を向上させる。
