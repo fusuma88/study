@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>令和７年度　春期　PM/DB/ES/AU/SC　午前Ⅰ　問題【共通】</title>
+    <style>
+        header,
+        main {
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        form {
+            width: 400px;
+            padding-left: 50px;
+            justify-content: space-around;
+        }
+
+        label {
+            margin-right: 50px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        embed {
+            width: 100%;
+        }
+    </style>
+    <script>
+        const ans = ["", "ア", "イ", "ウ", "ウ", "イ", "ウ", "ウ", "ウ", "イ", "ア",
+            "イ", "ウ", "イ", "イ", "ウ", "ア", "イ", "イ", "エ", "イ",
+            "ウ", "ウ", "イ", "エ", "イ", "ウ", "イ", "エ", "ウ", "イ"];
+        const QSMAX = 30;
+        var cnt = 0;
+        /* 回答をチェックする */
+        function chkResult() {
+            let ret = document.result.sel.value;
+            console.log(ret);
+            if (ans[cnt] === ret) {
+                createAns(cnt);
+            }
+        }
+        /* 問題を生成する */
+        function createQs(num) {
+            let qsElement = document.getElementById("question");
+            qsElement.innerHTML = "";
+            qsElement.innerHTML += '<img src="images/' + num + '.png" alt="問題本文" id="qs" onclick="nextQs()">';
+        }
+        /* 解答を生成する */
+        function createAns(num) {
+            let ansElement = document.getElementById("answer");
+            ansElement.innerHTML = "";
+            ansElement.innerHTML += '正解<br><embed src="images/a' + num + '.txt" type="text/plain" alt="解説なし">';
+            1
+        }
+        /* 次の問題を生成する */
+        function nextQs() {
+            console.log("nextqs");
+            for (let i = 0; i < document.result.sel.length; i++) {
+                document.result.sel[i].checked = false;
+            }
+            document.getElementById("answer").innerHTML = "";
+            cnt++;
+            /* 問題はトグルさせる */
+            if (cnt > QSMAX) cnt = 1;
+            createQs(cnt);
+        }
+
+    </script>
+</head>
+
+<body onload="nextQs();">
+    <header>
+        <h1>令和７年度　春期　PM/DB/ES/AU/SC　午前Ⅰ　問題【共通】</h1>
+    </header>
+    <main>
+        <p id="question">
+        </p>
+        <p>
+        <form name="result">
+            <input type="radio" name="sel" id="a" value="ア" onchange="chkResult()"><label for="a">ア</label>
+            <input type="radio" name="sel" id="i" value="イ" onchange="chkResult()"><label for="i">イ</label>
+            <input type="radio" name="sel" id="u" value="ウ" onchange="chkResult()"><label for="u">ウ</label>
+            <input type="radio" name="sel" id="e" value="エ" onchange="chkResult()"><label for="e">エ</label>
+        </form>
+        </p>
+        <p id="answer">
+        </p>
+    </main>
+    <footer>
+        <p>
+            出典元：IPA　独立行政法人　情報処理推進機構
+        </p>
+    </footer>
+</body>
+
+</html>
