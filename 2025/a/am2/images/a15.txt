@@ -1,0 +1,5 @@
+・CSPM（Cloud Security Posture Management
+　クラウドセキュリティ態勢管理）
+　AWS、Azure、GCPなどのIaaS/PaaS環境における
+　設定ミスや脆弱性を自動的に検出・可視化し、
+　セキュリティリスクを未然に防ぐツール・プロセス

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>令和７年度　秋期　PM/DB/ES/AU/SC　午前Ⅱ　問題【共通】</title>
+    <style>
+        header,
+        main {
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        form {
+            width: 400px;
+            padding-left: 50px;
+            justify-content: space-around;
+        }
+
+        label {
+            margin-right: 50px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        embed {
+            width: 100%;
+        }
+    </style>
+    <script>
+        const ans = ["", "ウ", "イ", "エ", "エ", "ア", "イ", "ア", "ア", "エ",
+            "イ", "ア", "ア", "イ", "エ", "イ", "エ", "ア", "ア", "イ", "ウ", "エ",
+            "イ", "ウ", "ウ", "エ"];
+        function chkResult() {
+            let ret = document.result.sel.value;
+            let num = +(((document.getElementById("qs").src).slice(-6)).replace(/[^0-9]/g, ''));
+            console.log(ret);
+            if (ans[num] === ret) {
+                document.getElementById("answer").style = "display: block;";
+            }
+        }
+        function nextQs() {
+            console.log("nextqs");
+            for (let i = 0; i < document.result.sel.length; i++) {
+                document.result.sel[i].checked = false;
+            }
+            let next = +(((document.getElementById("qs").src).slice(-6)).replace(/[^0-9]/g, '')) + 1;
+            document.getElementById("answer").style = "display: none;";
+            if (ans.length <= next) {
+                document.getElementById("qs").src = "images/q1.png";
+            }
+            else {
+                document.getElementById("qs").src = "images/q" + next + ".png";
+                document.getElementById("answer").children[1].src = "images/a" + next + ".txt";
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>令和７年度　秋期　PM/DB/ES/AU/SC　午前Ⅱ　問題【共通】</h1>
+    </header>
+    <main>
+        <p>
+            <img src="images/q1.png" alt="問題本文" id="qs" onclick="nextQs()">
+        </p>
+        <p>
+        <form name="result">
+            <input type="radio" name="sel" id="a" value="ア" onchange="chkResult()"><label for="a">ア</label>
+            <input type="radio" name="sel" id="i" value="イ" onchange="chkResult()"><label for="i">イ</label>
+            <input type="radio" name="sel" id="u" value="ウ" onchange="chkResult()"><label for="u">ウ</label>
+            <input type="radio" name="sel" id="e" value="エ" onchange="chkResult()"><label for="e">エ</label>
+        </form>
+        </p>
+        <p id="answer" style="display: none;">
+            正解<br>
+            <embed src="images/a1.txt" type="text/plain" alt="解説なし">
+        </p>
+    </main>
+    <footer>
+        <p>
+            出典元：IPA　独立行政法人　情報処理推進機構
+        </p>
+    </footer>
+</body>
+
+</html>

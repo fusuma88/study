@@ -1,0 +1,5 @@
+1xx: 情報 (Informational) - リクエストは処理中
+2xx: 成功 (Success) - 正常に処理された
+3xx: リダイレクト (Redirection) - 別のURLへ転送が必要
+4xx: クライアントエラー (Client Error) - ブラウザ側に問題がある
+5xx: サーバーエラー (Server Error) - サーバー側で問題が発生

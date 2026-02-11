@@ -1,0 +1,19 @@
+・DKIM（DomainKeys Identified Mail）
+　電子メールの送信元ドメインが本物であり、
+　メールが途中で改ざんされていないことを
+　電子署名で証明する送信ドメイン認証技術
+
+・OP25B（Outbound Port 25 Blocking）
+　プロバイダが契約者の回線からのメール
+　送信時に、特定の25番ポート（SMTP）で
+　の直接送信を規制し、迷惑メール送信を
+　遮断する技術
+
+・S/MIME
+　（Secure/Multipurpose Internet Mail Extensions）
+　電子証明書を用いて電子メールの暗号化と
+　電子署名を行う標準規格
+
+・SPF（Sender Policy Framework）は、DNSを
+　利用してメールの送信元IPアドレスを検証し、
+　なりすましメールを検知・拒否するドメイン認証技術
