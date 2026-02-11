@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>令和７年度　春期　PM/DB/ES/AU/SC　午後　問題【共通】</title>
+    <style>
+        header,
+        main {
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        form {
+            width: 400px;
+            padding-left: 50px;
+            justify-content: space-around;
+        }
+
+        label {
+            margin-right: 50px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        embed {
+            width: 100%;
+        }
+    </style>
+    <script>
+        const qsInfo = [
+            { qsCnt: 8, ansCnt: 2 },
+            { qsCnt: 10, ansCnt: 2 },
+            { qsCnt: 9, ansCnt: 2 },
+            { qsCnt: 9, ansCnt: 2 }
+        ];
+        var cnt = 0;
+
+        function createQs(num) {
+            let qsElement = document.getElementById("question");
+            qsElement.innerHTML = "";
+            for (let i = 0; i < qsInfo[num].qsCnt; i++) {
+                qsElement.innerHTML += '<img src="images/' + (num + 1) + '/' + (i + 1) + '.png" alt="">';
+            }
+        }
+        function createAns(num) {
+            let ansElement = document.getElementById("answer");
+            ansElement.innerHTML = "";
+            for (let i = 0; i < qsInfo[num].ansCnt; i++) {
+                ansElement.innerHTML += '<img src="images/' + (num + 1) + '/a' + (i + 1) + '.png" alt="">';
+            }
+        }
+        function nextQs() {
+            console.log("nextqs");
+            createQs(cnt);
+            createAns(cnt);
+            cnt++;
+            if (cnt >= qsInfo.length) cnt = 0;
+        }
+
+    </script>
+</head>
+
+<body onload="nextQs();">
+    <header>
+        <h1>令和７年度　春期　PM/DB/ES/AU/SC　午後　問題【共通】</h1>
+    </header>
+    <main>
+        <p id="question">
+        </p>
+        <p id="answer" onclick="nextQs();">
+        </p>
+    </main>
+    <footer>
+        <p>
+            出典元：IPA　独立行政法人　情報処理推進機構
+        </p>
+    </footer>
+</body>
+
+</html>
