@@ -1,0 +1,9 @@
+・MTBF（Mean Time Between Failures：平均故障間隔）：
+　修理可能な機器やシステムが故障から次の故障までに正常稼働した平均時間
+
+・MTBF＝総稼働時間　／　総故障回数
+
+・MTTR（Mean Time To Repair / Recovery）
+　コンピュータシステムやITインフラにおける平均復旧時間
+
+・MTTR＝総修理・復旧時間　／　故障インシデント回数

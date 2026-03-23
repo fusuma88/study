@@ -1,0 +1,13 @@
+・SVG（Scalable Vector Graphics）
+　XMLベースのテキスト形式で記述されたベクター画像フォーマット
+
+・OpenGL（Open Graphics Library）
+　2D/3Dグラフィックスを高速に描画するための、ハードウェア（GPU）
+　を操作するクロスプラットフォームなAPI仕様
+
+・PNG（Portable Network Graphics）
+　背景の透明・半透明処理と高画質な可逆圧縮（何度保存しても画質が
+　落ちない）を特徴とする、Webやグラフィックで標準的な画像形式
+
+・TIFF（ティフ：Tagged Image File Format）
+　高画質を保持できる非圧縮または可逆圧縮の画像ファイルフォーマット

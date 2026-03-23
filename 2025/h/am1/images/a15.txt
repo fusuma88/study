@@ -1,0 +1,8 @@
+・IPsecは、OSI基本参照モデルの第3層「ネットワーク層」
+
+・L2TP（Layer 2 Tunneling Protocol）は、OSI基本参照モデルの
+　第2層（データリンク層）
+
+・TLS（Transport Layer Security）は、OSI基本参照モデルにおいて
+　主に第6層：プレゼンテーション層、または第5層：セッション層
+　（と第6層の境界）

@@ -1,0 +1,3 @@
+・CPI（Cycles Per Instruction）
+　1つの命令を実行するのに、CPUが何クロック
+　（サイクル）を必要とするかを表す指標

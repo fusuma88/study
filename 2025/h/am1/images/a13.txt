@@ -1,0 +1,2 @@
+・SBOM（Software Bill of Materials：ソフトウェア部品表）を用いて
+　できるセキュリティ対策はソフトウェアの脆弱性管理。
