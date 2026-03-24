@@ -1,0 +1,3 @@
+・IoC（Indicators of Compromise）
+　「侵害の痕跡」を指す（IPアドレス、
+　ハッシュ値など攻撃の証拠）
