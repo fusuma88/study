@@ -1,0 +1,3 @@
+・ARP（Address Resolution Protocol）
+　IPネットワーク上で通信相手のIPアドレスから、
+　物理的な通信に必要なMACアドレスを特定するプロトコル

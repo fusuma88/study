@@ -1,0 +1,3 @@
+・CVE（Common Vulnerabilities and Exposures）
+　情報セキュリティにおける脆弱性に固有のID（CVE-YYYY-NNNN形式）
+　を付与し、世界共通のリストとして管理する仕組み
