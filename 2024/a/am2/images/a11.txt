@@ -1,0 +1,4 @@
+・SOAR（ソアー：Security Orchestration, Automation and Response）
+　多数のセキュリティツールを連携（Orchestration）し、調査や対応
+　プロセスを自動化（Automation）することで、迅速な脅威対応
+　（Response）を実現する技術・ソリューション。

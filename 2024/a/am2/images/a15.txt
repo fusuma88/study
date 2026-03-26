@@ -1,0 +1,3 @@
+・DTLS（Datagram Transport Layer Security）
+　主にUDP通信（データグラム）を暗号化し、盗聴や
+　改ざんから保護する通信プロトコル。

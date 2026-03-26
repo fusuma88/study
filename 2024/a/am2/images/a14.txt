@@ -1,0 +1,16 @@
+・X-Frame-Options
+　Webサイトが他サイトの<iframe>などで埋め込まれるのを防ぎ、
+　クリックジャッキング攻撃から保護するHTTPレスポンスヘッダー。
+
+・HttpOnly属性
+　CookieをJavaScriptからアクセス不可能にするセキュリティ機能です。
+　これにより、クロスサイトスクリプティング（XSS）攻撃によるセッ
+　ションハイジャック（クッキーの盗難）リスクを軽減。
+
+・Secure属性
+　WebブラウザのCookieに設定するセキュリティ機能で、
+　暗号化されたHTTPS通信でのみCookieを送信するように制限するもの。
+
+・HSTS（HTTP Strict Transport Security）
+　Webサイトがブラウザに対し、以降のアクセスをすべてHTTPS
+　（暗号化通信）に強制するセキュリティ技術。

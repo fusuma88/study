@@ -1,0 +1,17 @@
+・Echo Reply（エコー応答）
+　ping の応答
+
+・Destination Unreachable（宛先到達不能）
+　宛先ホストやネットワークへの到達失敗
+
+・Source Quench（送信元抑制）
+　ネットワークの混雑による送信速度低下の要求
+
+・Redirect（リダイレクト）
+　ルーターが最適なルーティング情報を通知
+
+・Echo Request（エコー要求）
+　ping の要求
+
+・Time Exceeded（時間超過）
+　パケットの生存時間(TTL)切れ

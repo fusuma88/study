@@ -1,0 +1,4 @@
+・AAA（トリプルエー）フレームワーク
+　ネットワークセキュリティにおいて「認証（Authentication）」
+　「認可（Authorization）」「課金・記録（Accounting）」
+　の3つの要素を統合的に管理する枠組み。
