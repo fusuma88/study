@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+header,
+main {
+    width: 400px;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+form {
+    width: 400px;
+    padding-left: 50px;
+    justify-content: space-around;
+}
+
+label {
+    margin-right: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+embed {
+    width: 100%;
+}
+
+#btn {
+    width: 50px;
+    height: 20px;
+}

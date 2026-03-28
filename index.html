@@ -5,36 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC問題集</title>
-    <style>
-        header,
-        main {
-            width: 400px;
-        }
-
-        h1 {
-            font-size: 16px;
-        }
-
-        form {
-            width: 400px;
-            padding-left: 50px;
-            justify-content: space-around;
-        }
-
-        label {
-            margin-right: 50px;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        embed {
-            width: 100%;
-        }
-    </style>
-    <script>
-    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -42,36 +14,23 @@
         <h1>SC問題集</h1>
     </header>
     <main>
-        <p>
-            <a href="2025/a/index.html">２０２５年度秋</a>
-        </p>
-        <p>
-            <a href="2025/h/index.html">２０２５年度春</a>
-        </p>
-        <p>
-            <a href="2024/a/index.html">２０２４年度秋</a>
-        </p>
-        <p>
-            <a href="2024/h/index.html">２０２４年度春</a>
-        </p>
-        <p>
-            <a href="2023/a/index.html">２０２３年度秋</a>
-        </p>
-        <p>
-            <a href="2023/h/index.html">２０２３年度春</a>
-        </p>
-        <p>
-            <a href="2022/a/index.html">２０２２年度秋</a>
-        </p>
-        <p>
-            <a href="2022/h/index.html">２０２２年度春</a>
-        </p>
-        <p>
-            <a href="2021/a/index.html">２０２１年度秋</a>
-        </p>
-        <p>
-            <a href="2021/h/index.html">２０２１年度春</a>
-        </p>
+        <select name="yearList" id="year">
+            <option value="2025">２０２５年度</option>
+            <option value="2024">２０２４年度</option>
+            <option value="2023">２０２３年度</option>
+            <option value="2022">２０２２年度</option>
+            <option value="2021">２０２１年度</option>
+        </select>
+        <select name="seasons" id="season">
+            <option value="a">秋</option>
+            <option value="h">春</option>
+        </select>
+        <select name="times" id="time">
+            <option value="am1">午前１</option>
+            <option value="am2">午前２</option>
+            <option value="pm">午後</option>
+        </select>
+        <button id="btn" onclick="window.location.href=link;">Go</button>
     </main>
     <footer>
         <p>
