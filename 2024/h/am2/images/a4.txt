@@ -1,0 +1,16 @@
+・SAML（Security Assertion Markup Language）
+　異なるドメイン間（例：社内システムとクラウドサービス）
+　でユーザーの認証情報を安全に共有し、1回のログインで複数
+　のサービスを利用できる「シングルサインオン（SSO）」を実現
+　するXMLベースの標準規格。
+
+・SOAP（Simple Object Access Protocol）
+　XMLベースの通信プロトコルであり、特に企業間のWebサービス連携
+　において、WS-Security技術などを用いて、強固な機密性、完全性、
+　認証を保証するセキュリティ機能を提供します。
+　HTTP/SMTP上で動作し、通信相手のプラットフォームに依存しない、
+　安全性の高いXMLメッセージ交換を実現。
+
+・XKMS（XML Key Management Specification）
+　XMLベースの通信において公開鍵基盤（PKI）の処理を外部化・
+　簡素化するW3Cの通信規格。

@@ -1,0 +1,18 @@
+・Cache-Control
+　Webブラウザやプロキシサーバがコンテンツ
+　（画像、HTML、JS等）をキャッシュする期間
+　やルールを管理するHTTPヘッダー。
+
+　・Cache-Control:no-store
+　　レスポンスを一切キャッシュに保存しない。
+
+　・Cache-Control:no-cache
+　　キャッシュは可能ですが、利用する前に必ず
+　　サーバーに「新しいデータはないか」問い合わせ。
+
+　・Cache-Control:private
+　　ブラウザ（ローカルキャッシュ）のみにキャッシュを許可
+
+　・Cache-Control:public
+　　ブラウザだけでなく、CDNなどの共有キャッシュサーバー
+　　にもキャッシュを許可。

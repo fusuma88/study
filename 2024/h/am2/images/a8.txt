@@ -1,0 +1,20 @@
+・CMMC（サイバーセキュリティ成熟度モデル認証：
+　Cybersecurity Maturity Model Certification）
+　米国防総省（DoD）https://www.defense.gov/が
+　サプライチェーンの防衛関連企業（DIB）に求める、
+　機密情報保護のセキュリティ基準と認定制度。
+
+・CMMI（Capability Maturity Model Integration：
+　能力成熟度モデル統合）
+　組織のソフトウェア開発やプロジェクト管理の
+　プロセス（仕組み）が、どの程度成熟しているか
+　を評価・改善するための国際的な指針。
+
+・SAMM（正式名称：OWASP Software Assurance Maturity Model）
+　組織がソフトウェア開発ライフサイクル（SDLC）において、
+　セキュリティ対策の成熟度を評価・向上させるためのフレームワーク
+
+・SIM3（Security Incident Management Maturity Model）
+　CSIRT（情報セキュリティの事故対応チーム）の能力を4つの観点
+　（組織・人材・ツール・プロセス）から5段階で評価・成熟度を
+　測定する国際的なフレームワーク。
