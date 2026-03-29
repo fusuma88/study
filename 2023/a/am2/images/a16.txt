@@ -1,0 +1,10 @@
+・APOP（Authenticated Post Office Protocol）
+　メールを受信する際に、パスワードを暗号化して通信する方式。
+
+・IMAPS（IMAP over SSL/TLS）
+　メールを受信する仕組みであるIMAPに、SSL/TLSによる
+　暗号化を組み合わせたプロトコル。
+
+・SMTP submission（サブミッションポート/ポート587）は、
+　メーラーからメールサーバーへメールを安全に送信する
+　ための専用窓口（ポート番号）。
