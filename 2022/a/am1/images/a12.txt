@@ -1,0 +1,15 @@
+・CHAP（Challenge Handshake Authentication Protocol）
+　主にPPP接続などで使われる、ネットワーク認証プロトコル
+
+・LDAP（Lightweight Directory Access Protocol）
+　ネットワーク上のユーザーID、パスワード、メールアドレス
+　などの情報を一元管理・検索する「ディレクトリサービス」
+　にアクセスするための通信規約（プロトコル）
+
+・OCSP（Online Certificate Status Protocol）
+　Webサイトのデジタル証明書が有効期限内に失効していないか、
+　リアルタイムで認証局（CA）に問い合わせるプロトコル
+
+・SNMP（Simple Network Management Protocol）
+　ルーターやサーバーなどのネットワーク機器を遠隔で監視
+　・管理する通信ルール（プロトコル）
