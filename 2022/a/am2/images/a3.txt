@@ -1,0 +1,17 @@
+・SAML（Security Assertion Markup Language）
+　異なるドメイン間やクラウドサービス間でユーザー認証情報を
+　安全にやり取りするXMLベースの標準規格。
+
+・SOAP（Simple Object Access Protocol）
+　Webサービス間でXML形式の構造化されたデータを安全に交換
+　するためのメッセージング・プロトコル。
+
+・XKMS（XML Key Management Specification）
+　XMLベースの通信において公開鍵基盤（PKI）の公開鍵証明書
+　や鍵情報を、簡単かつ統一的に管理・認証するためのW3C標準
+　プロトコル。
+
+・ML署名（XML Digital Signature / XMLDSig）
+　XML形式のデータにデジタル署名を付与し、その文書が「本人
+　によって作成されたか（認証）」、「改ざんされていないか
+　（完全性）」を保証するW3Cの標準規格。

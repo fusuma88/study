@@ -1,0 +1,11 @@
+・RSTP（Rapid Spanning Tree Protocol）
+LANネットワーク内でデータが無限ループするのを防ぐ「スパニングツリー（STP）」
+を高速化した通信規約
+
+・RTSP（Real Time Streaming Protocol）
+ネットワーク経由で音声や動画などのデータをリアルタイムで配信・制御する
+ための通信規格（プロトコル）
+
+・VRRP（Virtual Router Redundancy Protocol）
+ルーターやL3スイッチの故障に備え、複数の機器をグループ化して「1台の仮想ルーター」
+として動作させるネットワークプロトコル

@@ -1,0 +1,10 @@
+・PGP（Pretty Good Privacy）
+電子メールやファイルの暗号化とデジタル署名を行うためのセキュリティプログラム
+
+・S/MIME（Secure/Multipurpose Internet Mail Extensions）
+電子メールの「盗聴防止（暗号化）」と「なりすまし・改ざんの防止（電子署名）」
+を行うためのインターネット標準規格
+
+・MTPoverTLS（一般的に「SMTPS」や「SMTP over SSL/TLS」と呼ばれます）
+メールを送信する際、パソコンやスマホなどのメールソフトとメールサーバー間の
+通信を暗号化して安全に送受信する仕組み

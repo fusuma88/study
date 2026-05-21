@@ -1,0 +1,3 @@
+・CPRM（Content Protection for Recordable Media）
+デジタル放送などの「コピーワンス（1回のみ録画可能）」番組をDVDなどの
+メディアに録画する際に使用される著作権保護技術
