@@ -1,0 +1,4 @@
+・XBRL（eXtensible Business Reporting Language）
+企業の財務諸表や決算短信などの事業報告データを、
+コンピュータで簡単に処理・分析できるように標準化
+された電子データフォーマット
