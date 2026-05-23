@@ -1,0 +1,5 @@
+・NTP（Network Time Protocol）
+ネットワーク上で時刻合わせに使用される標準的なプロトコル
+
+・SNTP（Simple Network Time Protocol）
+NTPを簡略化したプロトコル

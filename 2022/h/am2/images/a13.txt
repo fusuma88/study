@@ -1,0 +1,3 @@
+・DNSSEC（Domain Name System Security Extensions）
+Webサイトの住所録であるDNS（Domain Name System）のデータを、
+「デジタル署名」によって改ざんされていない安全なものか検証する仕組み

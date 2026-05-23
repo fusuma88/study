@@ -1,0 +1,4 @@
+・IEEE 802.11aのアクセス制御方式
+電波の衝突を防いで複数の端末が効率よく通信を共有するための
+自律分散方式「CSMA/CA（Carrier Sense Multiple Access with
+ Collision Avoidance）」を採用

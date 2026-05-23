@@ -1,0 +1,3 @@
+・HTTP Strict Transport Security（HSTS）
+WebサーバーがWebブラウザーに対して、以降の通信では常に暗号化された
+「HTTPS」を使用するよう強制するセキュリティ機能
