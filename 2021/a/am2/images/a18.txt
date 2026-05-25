@@ -1,0 +1,6 @@
+・VXLAN（Virtual eXtensible Local Area Network）
+L3（レイヤー3）ネットワーク上に論理的なL2（レイヤー2）
+ネットワークを構築するためのカプセル化技術
+
+・IEEE 802.1ad(QinQ)
+イーサネットフレームにVLANタグを二重に挿入（入れ子）する技術
