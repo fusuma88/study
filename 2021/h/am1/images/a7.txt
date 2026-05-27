@@ -1,0 +1,3 @@
+・RFID（Radio Frequency Identification）
+電波や電磁波を用いて専用のICタグ（RFタグ）
+の情報を非接触で読み書きする自動認識技術
