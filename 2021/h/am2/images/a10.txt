@@ -1,0 +1,4 @@
+・DNSのCAA（Certification Authority Authorization）レコード
+「そのドメインに対して、どの認証局（CA）だけが
+SSL/TLSサーバー証明書を発行できるか」を制限・指定するため
+のDNSレコード。

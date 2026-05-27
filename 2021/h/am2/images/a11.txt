@@ -1,0 +1,4 @@
+・CASB（キャスビー：Cloud Access Security Broker）
+業員とクラウドサービス（Microsoft 365やGoogle Workspaceなど）
+の間に入り、利用状況の監視やセキュリティポリシーを一元適用
+する仕組み

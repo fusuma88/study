@@ -1,0 +1,4 @@
+・RFC8110
+パスワードなどの事前認証なしでWi-Fi通信を暗号化する技術「OWE (Opportunistic Wireless Encryption)」を定義した規格
+
+・Enhanced Open：この仕組みはWi-Fi Allianceにより「Wi-Fi CERTIFIED Enhanced Open」としても規格化

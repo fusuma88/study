@@ -1,0 +1,4 @@
+・OCSP（Online Certificate Status Protocol）
+ウェブサイトのSSL/TLSサーバー証明書などが、現在も有効か、
+あるいは不正利用などにより失効していないかをリアルタイム
+で確認するための通信プロトコル
