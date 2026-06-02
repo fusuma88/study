@@ -7,6 +7,7 @@
     <title>SC問題集</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script type="module" src="answers.js" defer></script>
 </head>
 
 <body>
@@ -14,29 +15,54 @@
         <h1>SC問題集</h1>
     </header>
     <main>
-        <select name="yearList" id="year">
-            <option value="2025">２０２５年度</option>
-            <option value="2024">２０２４年度</option>
-            <option value="2023">２０２３年度</option>
-            <option value="2022">２０２２年度</option>
-            <option value="2021">２０２１年度</option>
-        </select>
-        <select name="seasons" id="season">
-            <option value="a">秋</option>
-            <option value="h">春</option>
-        </select>
-        <select name="times" id="time">
-            <option value="am1">午前１</option>
-            <option value="am2">午前２</option>
-            <option value="pm">午後</option>
-        </select>
-        <button id="btn" onclick="window.location.href=link;">Go</button>
+        <section id="menu" class="disp">
+            <h2>問題選択</h2>
+            <div class="selection">
+                <select name="yearList" id="year">
+                    <option value="2025">２０２５（令和７）年度</option>
+                    <option value="2024">２０２４（令和６）年度</option>
+                    <option value="2023">２０２３（令和５）年度</option>
+                    <option value="2022">２０２２（令和４）年度</option>
+                    <option value="2021">２０２１（令和３）年度</option>
+                </select>
+                <select name="seasons" id="season">
+                    <option value="a">秋</option>
+                    <option value="h">春</option>
+                </select>
+                <select name="schedules" id="schedule">
+                    <option value="am1">午前Ⅰ</option>
+                    <option value="am2">午前Ⅱ</option>
+                    <option value="pm">午後</option>
+                </select>
+                <button id="btn" onclick="switchExamPage();">Go</button>
+            </div>
+        </section>
+        <!-- 試験問題のテンプレート -->
+        <template id="exam-tamplate">
+            <div class="next">></div>
+            <div class="prev">
+                < </div>
+                    <div class="exam-content">
+                        <h2></h2>
+                        <p class="question">
+                            <img src="" alt="問題本文">
+                        </p>
+                        <p class="answer">
+                        </p>
+                        <p class="result">
+                        </p>
+                    </div>
+        </template>
+        <!-- 試験問題 -->
+        <section id="exam-container" class="hide">
+        </section>
     </main>
     <footer>
         <p>
             出典元：IPA　独立行政法人　情報処理推進機構
         </p>
     </footer>
+
 </body>
 
 </html>
