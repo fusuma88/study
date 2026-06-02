@@ -208,7 +208,7 @@ function createAmQs(cl, path) {
 
     let qsnum = 1;
 
-    cl.querySelector('.question img').src = `${path}/images/q1.png`;
+    cl.querySelector('.question img').src = `${path}/images/1.png`;
     cl.querySelector('.answer').innerHTML = `
                     <form name="answer">
                         <label><input type="radio" name="sel" value="ア">ア</label>
@@ -265,7 +265,7 @@ function createAmQs(cl, path) {
 
             /* 問題はトグルさせる */
             if (qsnum > qsmax.get(tval)) qsnum = 1;
-            qs.src = qs.src.replace(/[^/]+$/, `q${qsnum}.png`);
+            qs.src = qs.src.replace(/[^/]+$/, `${qsnum}.png`);
 
         },
         prevAmQs: function () {
@@ -280,7 +280,7 @@ function createAmQs(cl, path) {
 
             /* 問題はトグルさせる */
             if (qsnum < 1) qsnum = qsmax.get(tval);
-            qs.src = qs.src.replace(/[^/]+$/, `q${qsnum}.png`);
+            qs.src = qs.src.replace(/[^/]+$/, `${qsnum}.png`);
         }
     };
 
