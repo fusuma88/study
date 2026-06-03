@@ -288,12 +288,116 @@ function createAmQs(cl, path) {
 
 // 午後試験を生成
 const createPmQs = (cl, path) => {
-    const qsInfo = [
-        { qsCnt: 6, ansCnt: 1 },
-        { qsCnt: 7, ansCnt: 1 },
-        { qsCnt: 11, ansCnt: 1 },
-        { qsCnt: 10, ansCnt: 1 }
-    ];
+    const qsInfos = new Map([
+        ["2025/a/pm",
+            [
+                { qsCnt: 6, ansCnt: 1 },
+                { qsCnt: 7, ansCnt: 1 },
+                { qsCnt: 11, ansCnt: 1 },
+                { qsCnt: 10, ansCnt: 1 }
+            ]
+        ],
+        ["2025/h/pm",
+            [
+                { qsCnt: 8, ansCnt: 2 },
+                { qsCnt: 10, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 2 }
+            ]
+        ],
+        ["2024/a/pm",
+            [
+                { qsCnt: 10, ansCnt: 2 },
+                { qsCnt: 10, ansCnt: 2 },
+                { qsCnt: 8, ansCnt: 2 },
+                { qsCnt: 10, ansCnt: 2 }
+            ]
+        ],
+        ["2024/h/pm",
+            [
+                { qsCnt: 10, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 2 },
+                { qsCnt: 11, ansCnt: 2 }
+            ]
+        ],
+        ["2023/a/pm",
+            [
+                { qsCnt: 5, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 2 },
+                { qsCnt: 7, ansCnt: 2 },
+                { qsCnt: 9, ansCnt: 3 }
+            ]
+        ],
+        ["2023/h/pm1",
+            [
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 5, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 }
+            ]
+        ],
+        ["2023/h/pm2",
+            [
+                { qsCnt: 11, ansCnt: 3 },
+                { qsCnt: 12, ansCnt: 3 }
+            ]
+        ],
+        ["2022/a/pm1",
+            [
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 }
+            ]
+        ],
+        ["2022/a/pm2",
+            [
+                { qsCnt: 11, ansCnt: 2 },
+                { qsCnt: 13, ansCnt: 2 }
+            ]
+        ],
+        ["2022/h/pm1",
+            [
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 5, ansCnt: 2 }
+            ]
+        ],
+        ["2022/h/pm2",
+            [
+                { qsCnt: 11, ansCnt: 2 },
+                { qsCnt: 14, ansCnt: 2 }
+            ]
+        ],
+        ["2021/a/pm1",
+            [
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 7, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 }
+            ]
+        ],
+        ["2021/a/pm2",
+            [
+                { qsCnt: 12, ansCnt: 2 },
+                { qsCnt: 12, ansCnt: 2 }
+            ]
+        ],
+        ["2021/h/pm1",
+            [
+                { qsCnt: 5, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 5, ansCnt: 2 }
+            ]
+        ],
+        ["2021/h/pm2",
+            [
+                { qsCnt: 12, ansCnt: 2 },
+                { qsCnt: 10, ansCnt: 2 }
+            ]
+        ]
+    ]);
+
+    const sel = path;
+    const qsInfo = qsInfos.get(sel);
 
     let cnt = 0;
 
