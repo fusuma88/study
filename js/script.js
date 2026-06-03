@@ -91,6 +91,16 @@ const switchExamPage = () => {
         nextbtn.addEventListener('click', chgPmQs.nextPmQs);
         prevbtn.addEventListener('click', chgPmQs.prevPmQs);
     }
+
+    // 問題選択画面へ戻る機能追加
+    const retBtn = clone.querySelector('.return');
+    retBtn.addEventListener('click', () => {
+        switchPage("menu");
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+    });
+
     container.appendChild(clone);
 
     switchPage("exam-container");
