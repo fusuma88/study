@@ -94,8 +94,16 @@ footer {
     float: right;
 }
 
+.next:hover {
+    opacity: 1;
+}
+
 .prev {
     float: left;
+}
+
+.prev:hover {
+    opacity: 1;
 }
 
 .disp {
@@ -104,4 +112,20 @@ footer {
 
 .hide {
     display: none;
+}
+
+.return {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 80vw;
+    color: #000;
+    align-content: center;
+    background-color: #aaa;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.return:hover {
+    opacity: 1;
 }
