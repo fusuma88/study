@@ -16,6 +16,22 @@ const createCategory = () => {
             <option value="pm">午後</option>
     `;
 
+    const year = document.getElementById('year');
+    const season = document.getElementById('season');
+    const schedule = document.getElementById('schedule');
+
+    // 年別に試験日程を設定
+    if (Number(year.value) === 2020) {
+        season.innerHTML = `
+                    <option value="a">秋</option>
+        `;
+    } else {
+        season.innerHTML = `
+                    <option value="a">秋</option>
+                    <option value="h">春</option>
+        `;
+    }
+
     if (Number(year.value) < 2023) {
         schedule.innerHTML = fourExam;
     } else if (Number(year.value) === 2023) {
@@ -213,6 +229,16 @@ function createAmQs(cl, path) {
             ["", "イ", "ウ", "エ", "ア", "ア", "エ", "ア", "ウ", "エ", "エ",
                 "エ", "ア", "エ", "イ", "ア", "イ", "ア", "ウ", "エ", "ウ",
                 "エ", "ア", "エ", "エ", "ア"]
+        ],
+        ["2020/a/am1",
+            ["", "ウ", "ウ", "ウ", "エ", "イ", "ア", "ウ", "ウ", "ウ", "エ",
+                "ウ", "ア", "イ", "イ", "イ", "ア", "ウ", "ア", "ウ", "ウ",
+                "ウ", "ア", "エ", "エ", "ア", "ウ", "エ", "ウ", "イ", "イ"]
+        ],
+        ["2021/a/am2",
+            ["", "イ", "エ", "ア", "ア", "エ", "イ", "イ", "ア", "エ", "イ",
+                "ウ", "ウ", "エ", "イ", "ア", "ウ", "ウ", "エ", "エ", "エ",
+                "エ", "エ", "イ", "ウ", "エ"]
         ]
     ]);
 
