@@ -429,6 +429,19 @@ const createPmQs = (cl, path) => {
                 { qsCnt: 12, ansCnt: 2 },
                 { qsCnt: 10, ansCnt: 2 }
             ]
+        ],
+        ["2020/a/pm1",
+            [
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 },
+                { qsCnt: 6, ansCnt: 2 }
+            ]
+        ],
+        ["2020/a/pm2",
+            [
+                { qsCnt: 12, ansCnt: 2 },
+                { qsCnt: 11, ansCnt: 2 }
+            ]
         ]
     ]);
 
