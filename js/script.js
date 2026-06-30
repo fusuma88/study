@@ -1,5 +1,23 @@
-// 年度に対応した試験日程を選択肢にする
-const createCategory = () => {
+// 年度に応じて季節を設定する
+const createSeason = () => {
+
+    const year = document.getElementById('year');
+
+    // 年別に試験日程を設定
+    if (Number(year.value) === 2020) {
+        season.innerHTML = `
+                    <option value="a">秋</option>
+        `;
+    } else {
+        season.innerHTML = `
+                    <option value="a">秋</option>
+                    <option value="h">春</option>
+        `;
+    }
+};
+
+// 年度と季節に対応した試験日程を選択肢にする
+const createSchedule = () => {
 
     // ２０２３年春以前の試験日程
     const fourExam = `
@@ -20,18 +38,6 @@ const createCategory = () => {
     const season = document.getElementById('season');
     const schedule = document.getElementById('schedule');
 
-    // 年別に試験日程を設定
-    if (Number(year.value) === 2020) {
-        season.innerHTML = `
-                    <option value="a">秋</option>
-        `;
-    } else {
-        season.innerHTML = `
-                    <option value="a">秋</option>
-                    <option value="h">春</option>
-        `;
-    }
-
     if (Number(year.value) < 2023) {
         schedule.innerHTML = fourExam;
     } else if (Number(year.value) === 2023) {
@@ -45,9 +51,10 @@ const createCategory = () => {
     }
 };
 
-year.addEventListener('change', createCategory);
+year.addEventListener('change', createSeason);
+year.addEventListener('change', createSchedule);
 
-season.addEventListener('change', createCategory);
+season.addEventListener('change', createSchedule);
 
 // コンテンツ切り替え
 // 指定されたidのセクションのみ表示する
